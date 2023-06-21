@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+    </head>
+
+    <body>
+        {{>header}}
+
+        <h3>Select an employee to view their information.</h3>
+        <ul>
+            {{#each data}}
+            <li><a href="/employees/{{this.empId}}">{{this.FirstName}} {{this.LastName}}</a></li>
+            {{/each}}
+        </ul>
+
+        {{>footer}}
+
+    </body>
+</html>
