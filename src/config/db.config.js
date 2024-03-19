@@ -1,7 +1,7 @@
 module.exports = {
-    HOST: "71.144.117.210",
-    PORT: "32769",
-    USER: "damarsierra",
-    PASSWORD: "d@marsh1sha",
-    DB: "ConstructCo"
+    HOST: import.meta.env.DB_HOST,
+    PORT: import.meta.env.DB_PORT,
+    USER: import.meta.env.DB_USER,
+    PASSWORD: import.meta.env.DB_PASSWORD,
+    DB: import.meta.env.DB_NAME
 };
